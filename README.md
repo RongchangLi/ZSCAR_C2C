@@ -10,31 +10,32 @@
                                                                  
 [//]: # (&#40;For displaying sample GIFs&#41;)
 <div align="center">
-  <table>
+  <table style="border-collapse: collapse;">
     <tr>
-      <td style="text-align: center; padding: 10px;">
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">
         <img src="samples/open_door.gif" width="120" />
         <br />
         <i>
-          <span style="color: black"><strong>Seen:</strong></span> 
+          <strong style="color: black;">Seen:</strong> 
           <span style="color: red;">Open</span> 
           <span style="color: blue;">a door</span>
         </i>
       </td>
-      <td style="text-align: center; padding: 10px;">
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">
         <img src="samples/close_book.gif" width="120" />
         <br />
         <i>
-          <span style="color: black"><strong>Seen:</strong></span> 
+          <strong style="color: black;">Seen:</strong> 
           <span style="color: red;">Close</span> 
           <span style="color: blue;">a book</span>
         </i>
       </td>
-      <td style="text-align: center; padding: 10px;">
+      <td style="height: 120px; width: 1px; border-left: 2px dashed gray; vertical-align: middle;"></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">
         <img src="samples/close_door.gif" width="120" />
         <br />
         <i>
-          <span style="color: black"><strong>Unseen:</strong></span> 
+          <strong style="color: black;">Unseen:</strong> 
           <span style="color: red;">Close</span> 
           <span style="color: blue;">a door</span>
         </i>
