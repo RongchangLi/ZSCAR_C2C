@@ -4,8 +4,7 @@
 
 > C2C: Component-to-Composition Learning for Zero-Shot Compositional Action Recognition
 
-> [Rongchang Li](https://rongchangli.github.io/), Zhenhua Feng, Tianyang Xu, Linze Li, Xiaojun Wu†, Muhammad Awais, Sara Atito, Josef Kittler
-> † Corresponding authors                    
+> [Rongchang Li](https://rongchangli.github.io/), Zhenhua Feng, Tianyang Xu, Linze Li, Xiaojun Wu†, Muhammad Awais, Sara Atito, Josef Kittler           
 > ECCV, 2024
                                                                  
 [//]: # (&#40;For displaying sample GIFs&#41;)
