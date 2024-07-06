@@ -1,5 +1,5 @@
 # C2C: Component-to-Composition Learning for Zero-Shot Compositional Action Recognition
-### [Project Page](xxx) | [Paper](xxx)
+### [Project Page](https://github.com/RongchangLi/ZSCAR_C2C) | [Paper](https://github.com/RongchangLi/ZSCAR_C2C)
 <br/>
 
 > C2C: Component-to-Composition Learning for Zero-Shot Compositional Action Recognition
