@@ -9,40 +9,43 @@
 > ECCV, 2024
                                                                  
 [//]: # (&#40;For displaying sample GIFs&#41;)
-<div align="center" style="display: flex; justify-content: center; align-items: center;">
-  <div style="text-align: center; margin: 10px;">
-    <img src="samples/open_door.gif" width="120" />
-    <br />
-    <i>
-      <strong style="color: black;">Seen:</strong> 
-      <span style="color: red;">Open</span> 
-      <span style="color: blue;">a door</span>
-    </i>
-  </div>
-  <div style="text-align: center; margin: 10px;">
-    <img src="samples/close_book.gif" width="120" />
-    <br />
-    <i>
-      <strong style="color: black;">Seen:</strong> 
-      <span style="color: red;">Close</span> 
-      <span style="color: blue;">a book</span>
-    </i>
-  </div>
-  <div style="height: 120px; width: 1px; border-left: 2px dashed gray; margin: 0 10px;"></div>
-  <div style="text-align: center; margin: 10px;">
-    <img src="samples/close_door.gif" width="120" />
-    <br />
-    <i>
-      <strong style="color: black;">Unseen:</strong> 
-      <span style="color: red;">Close</span> 
-      <span style="color: blue;">a door</span>
-    </i>
+<div align="center">
+  <table style="border-collapse: collapse;">
+    <tr>
+      <td style="text-align: center; padding: 10px;">
+        <img src="samples/open_door.gif" width="120" />
+        <br />
+        <i>
+          <strong style="color: black;">Seen:</strong> 
+          <span style="color: red;">Open</span> 
+          <span style="color: blue;">a door</span>
+        </i>
+      </td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="samples/close_book.gif" width="120" />
+        <br />
+        <i>
+          <strong style="color: black;">Seen:</strong> 
+          <span style="color: red;">Close</span> 
+          <span style="color: blue;">a book</span>
+        </i>
+      </td>
+      <td style="height: 120px; width: 1px; border-left: 2px dashed gray; text-align: center; padding: 10px;"></td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="samples/close_door.gif" width="120" />
+        <br />
+        <i>
+          <strong style="color: black;">Unseen:</strong> 
+          <span style="color: red;">Close</span> 
+          <span style="color: blue;">a door</span>
+        </i>
+      </td>
+    </tr>
+  </table>
+  <div style="margin-top: 1px;">
+    <strong>Zero-Shot Compositional Action recognition (ZS-CAR)</strong>
   </div>
 </div>
-<div align="center" style="margin-top: 1px;">
-  <strong>Zero-Shot Compositional Action Recognition (ZS-CAR)</strong>
-</div>
-
 
 ## 🛠️ Prepare Something-composition (Sth-com)
 <p align="middle" style="margin-bottom: 0.5px;">
