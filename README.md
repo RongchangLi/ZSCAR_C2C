@@ -11,7 +11,7 @@
 [//]: # (&#40;For displaying sample GIFs&#41;)
 <div align="center" style="display: flex; justify-content: center; align-items: center;">
   <div style="margin: 10px;margin-bottom: 1px">
-    <img src="samples/open_door.gif" width="120" />
+    <img src="samples/open_door.gif" width="80" />
     <br />
     <i>
       <span style="color: black"><strong>Seen:</strong></span> 
@@ -20,7 +20,7 @@
     </i>
   </div>
   <div style="margin: 10px;margin-bottom: 1px">
-    <img src="samples/close_book.gif" width="120" />
+    <img src="samples/close_book.gif" width="80" />
     <br />
     <i>
       <span style="color: black"><strong>Seen:</strong></span> 
@@ -28,10 +28,10 @@
       <span style="color: blue;">a book</span>
     </i>
   </div>
-<!--   <div style="height: 120px; width: 1px; border-left: 2px dashed gray; margin: 0 0px;"></div> -->
+<div style="height: 120px; width: 1px; border-left: 2px dashed gray; margin: 0 0px;"></div>
 
   <div style="margin: 10px;margin-bottom: 1px">
-    <img src="samples/close_door.gif" width="120" />
+    <img src="samples/close_door.gif" width="80" />
     <br />
     <i>
       <span style="color: black"><strong>Unseen:</strong></span> 
