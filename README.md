@@ -16,18 +16,18 @@
         <img src="samples/open_door.gif" width="120" />
         <br />
         <i>
-          <strong style="color: black;">Seen:</strong> 
-          <span style="color: red;">Open</span> 
-          <span style="color: blue;">a door</span>
+          <font color="black"><strong>Seen:</strong></font> 
+          <font color="red">Open</font> 
+          <font color="blue">a door</font>
         </i>
       </td>
       <td style="text-align: center; padding: 10px;">
         <img src="samples/close_book.gif" width="120" />
         <br />
         <i>
-          <strong style="color: black;">Seen:</strong> 
-          <span style="color: red;">Close</span> 
-          <span style="color: blue;">a book</span>
+          <font color="black"><strong>Seen:</strong></font> 
+          <font color="red">Close</font> 
+          <font color="blue">a book</font>
         </i>
       </td>
       <td style="height: 120px; width: 1px; border-left: 2px dashed gray; text-align: center; padding: 10px;"></td>
@@ -35,17 +35,18 @@
         <img src="samples/close_door.gif" width="120" />
         <br />
         <i>
-          <strong style="color: black;">Unseen:</strong> 
-          <span style="color: red;">Close</span> 
-          <span style="color: blue;">a door</span>
+          <font color="black"><strong>Unseen:</strong></font> 
+          <font color="red">Close</font> 
+          <font color="blue">a door</font>
         </i>
       </td>
     </tr>
   </table>
   <div style="margin-top: 1px;">
-    <strong>Zero-Shot Compositional Action Recognition (ZS-CAR)</strong>
+    <strong>Zero-Shot Compositional Action recognition (ZS-CAR)</strong>
   </div>
 </div>
+
 
 
 ## 🛠️ Prepare Something-composition (Sth-com)
