@@ -67,26 +67,48 @@
   <strong>Some samples in Something-composition</strong>
 </p>
 
-1. Download Something-Something V2 (Sth-v2). Our proposed Something-composition (Sth-com) is based on [Sth-V2](https://developer.qualcomm.com/software/ai-datasets/something-something).
-We refer to the official website to download the videos.
-2. Extract frames. To accelerate the dataloader when training, we extract the frames for each video and save them in the _**frame_path**_. We recommend [mmaction2](https://github.com/open-mmlab/mmaction2) or [TSM repo](https://github.com/mit-han-lab/temporal-shift-module/blob/master/tools/vid2img_sthv2.py) to extract the frames.
-3. Dataset annotations. We provide our Sth-com annotation files in the [data_split](data_split/generalized) dir. The format is like:
-  ```bash
-    [
-        {
-        "id": "54463", # the sample name
-        "action": "opening a book", # the action(composition)
-        "verb": "Opening [something]", # the verb component
-        "object": "book" # the object component
-        },
-        {
-           ...
-        },
-        {
-           ...
-        },
-    ]
-  ```
+1. **Download Something-Something V2 (Sth-v2)**. Our proposed Something-composition (Sth-com) is based on [Sth-V2](https://developer.qualcomm.com/software/ai-datasets/something-something).
+We refer to the official website to download the videos to the path _video_path_.
+2. **Extract frames**. To accelerate the dataloader when training, we extract the frames for each video and save them in the _frame_path_. The command is:
+      ```bash
+      python tools/extract_frames.py --video_root video_path --frame_root frame_path
+      ```
+3. **Download Dataset annotations**. We provide our Sth-com annotation files in the [data_split](data_split/generalized) dir. The format is like:
+    ```bash
+      [
+          {
+          "id": "54463", # means the sample name
+          "action": "opening a book", # means composition
+          "verb": "Opening [something]", # means the verb component
+          "object": "book" # means the object component
+          },
+          {
+            ...
+          },
+          {
+            ...
+          },
+      ]
+    ```
+    Please kindly download these files to _annotation_path_.
+4. **Finally**, the dataset is bulit successfully. The structure looks like:
+      >   * annotation_path
+      >     * data_split
+      >       * generalized
+      >         * train_pairs.json
+      >         * val_pairs.json
+      >         * test_pairs.json
+      >   * frame_path
+      >     * 0
+      >         * 000001.jpg
+      >         * 000002.jpg
+      >         * ......
+      >     * 1
+      >         * 000001.jpg
+      >         * 000002.jpg
+      >         * ......
+      >     * ......
+
 
 ## 📝 TODO List
 - [ ] Add training codes.
