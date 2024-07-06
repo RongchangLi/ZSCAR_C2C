@@ -30,7 +30,6 @@
           <span style="color: blue;">a book</span>
         </i>
       </td>
-      <td style="height: 120px; width: 1px; border-left: 2px dashed gray;"></td>
       <td style="text-align: center; padding: 10px;">
         <img src="samples/close_door.gif" width="120" />
         <br />
