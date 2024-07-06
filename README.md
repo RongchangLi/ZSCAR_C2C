@@ -28,7 +28,7 @@
       <span style="color: blue;">a book</span>
     </i>
   </div>
-  <div style="height: 120px; width: 1px; border-left: 2px dashed gray; margin: 0 0px;"></div>
+<!--   <div style="height: 120px; width: 1px; border-left: 2px dashed gray; margin: 0 0px;"></div> -->
 
   <div style="margin: 10px;margin-bottom: 1px">
     <img src="samples/close_door.gif" width="120" />
