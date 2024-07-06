@@ -43,9 +43,10 @@
     </tr>
   </table>
   <div style="margin-top: 1px;">
-    <strong>Zero-Shot Compositional Action recognition (ZS-CAR)</strong>
+    <strong>Zero-Shot Compositional Action Recognition (ZS-CAR)</strong>
   </div>
 </div>
+
 
 ## 🛠️ Prepare Something-composition (Sth-com)
 <p align="middle" style="margin-bottom: 0.5px;">
