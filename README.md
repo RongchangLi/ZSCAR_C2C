@@ -74,10 +74,10 @@ We refer to the official website to download the videos.
   ```bash
     [
         {
-        "id": "54463", # means the sample name
-        "action": "opening a book", # means composition
-        "verb": "Opening [something]", # means the verb component
-        "object": "book" # means the object component
+        "id": "54463", # the sample name
+        "action": "opening a book", # the action(composition)
+        "verb": "Opening [something]", # the verb component
+        "object": "book" # the object component
         },
         {
            ...
