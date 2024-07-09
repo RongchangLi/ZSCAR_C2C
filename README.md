@@ -91,7 +91,7 @@ We refer to the official website to download the videos to the path _video_path_
       ]
     ```
     Please kindly download these files to _annotation_path_.
-4. **Finally**, the dataset is bulit successfully. The structure looks like:
+4. **Finally**, the dataset is built successfully. The structure looks like:
       >   * annotation_path
       >     * data_split
       >       * generalized
