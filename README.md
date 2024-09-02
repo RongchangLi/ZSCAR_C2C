@@ -1,4 +1,4 @@
-# C2C: Component-to-Composition Learning for Zero-Shot Compositional Action Recognition
+# [ECCV2024 oral] C2C: Component-to-Composition Learning for Zero-Shot Compositional Action Recognition
 ### [Project Page](https://github.com/RongchangLi/ZSCAR_C2C) | [Paper](https://arxiv.org/abs/2407.06113)
 <br/>
 
@@ -42,12 +42,12 @@
     </tr>
   </table>
   <div style="margin-top: 1px;">
-    <strong>Zero-Shot Compositional Action recognition (ZS-CAR)</strong>
+    <strong>Zero-Shot Compositional Action Recognition (ZS-CAR)</strong>
   </div>
 </div>
 
 
-
+---
 ## 🛠️ Prepare Something-composition (Sth-com)
 <p align="middle" style="margin-bottom: 0.5px;">
   <img src="samples/bend_spoon.gif" height="80" /> 
@@ -91,7 +91,7 @@ We refer to the official website to download the videos to the path _video_path_
       ]
     ```
     Please kindly download these files to _annotation_path_.
-4. **Finally**, the dataset is bulit successfully. The structure looks like:
+4. **Finally**, the dataset is built successfully. The structure looks like this:
       >   * annotation_path
       >     * data_split
       >       * generalized
@@ -109,6 +109,39 @@ We refer to the official website to download the videos to the path _video_path_
       >         * ......
       >     * ......
 
+---
+## 🚀 Train and test
 
+### Before running
+
+1. Prepare the word embedding models. We recommend following [Compcos](https://github.com/ExplainableML/czsl) to download the word
+   embedding models.
+2. You should modify the paths :
+
+   (For example, running C2C_vanilla, TSM-18 as the backbone.)
+    1. _dataset_path_ in ./config/c2c_vanilla_tsm.yml
+    2. _save_path_ in ./config/c2c_vanilla_tsm.yml
+    3. The code line: _t=fasttext.load_model('YOUR_PATH/cc.en.300.bin')_ in models/vm_models/word_embedding.py
+
+### Train
+
+1. The training command is shown below.
+
+  ```bash
+ CUDA_VISIBLE_DEVICES=YOUR_GPU_INDEXEX python train.py --config config/c2c_vm/c2c_vanilla_tsm.yml
+  ```
+
+### Test
+
+1. For the test, imagine you have trained your model and set the log dir as YOUR_LOG_PATH.
+
+   Then, you can **test** it using:
+
+  ```bash
+ CUDA_VISIBLE_DEVICES=YOUR_GPU_INDEXEX python test_for_models.py --logpath YOUR_LOG_PATH
+  ```
+
+---
 ## 📝 TODO List
-- [ ] Add training codes.
+- [x] Add training codes for VM+word embedding paradigm.
+- [ ] Add training codes from VLM paradigm.
