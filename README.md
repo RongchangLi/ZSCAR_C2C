@@ -126,7 +126,7 @@ We refer to the official website to download the videos to the path _video_path_
 
 ### Train
 
-1. The training command is shown below.
+1. Train a model with the command:
 
   ```bash
  CUDA_VISIBLE_DEVICES=YOUR_GPU_INDEXEX python train.py --config config/c2c_vm/c2c_vanilla_tsm.yml
