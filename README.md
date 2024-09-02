@@ -111,6 +111,7 @@ We refer to the official website to download the videos to the path _video_path_
 
 ---
 ## 🚀 Train and test
+🔔 Now take the dir **codes** as the project root. 
 
 ### Before running
 
