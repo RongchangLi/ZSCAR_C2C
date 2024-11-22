@@ -145,4 +145,4 @@ We refer to the official website to download the videos to the path _video_path_
 ---
 ## 📝 TODO List
 - [x] Add training codes for VM+word embedding paradigm.
-- [ ] Add training codes from VLM paradigm.
+- [x] Add training codes from VLM paradigm.
