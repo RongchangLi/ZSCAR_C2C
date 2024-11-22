@@ -29,21 +29,6 @@ data:
   num_workers: 4
 
 #======compositional module setting======
-#compcos:
-#  feat_dim: 512
-#  emb_dim: 300
-#  nlayers: 2
-#  relu: false
-#  dropout: true
-#  norm: true
-#  emb_init: fasttext
-#  image_extractor: tsmresnet18
-#  train_only: true
-#  static_inp: false
-#  cosine_scale: 100
-#  fc_emb: 768,1024,1200
-#  com_lr: 0.00025
-#  com_wd: 0.00005
 c2c:
   nlayers: 2
   fc_emb: 768,1024,1200
