@@ -1,6 +1,6 @@
 #======method setting======
 model:
-  framework: vm #vlm or vm
+  framework: vlm #vlm or vm
   method: c2c_enhance
   text_encoding_manner: component #composition, component, c2c_vanilla, c2c_enhance
   backbone: "ViT-B/32"
