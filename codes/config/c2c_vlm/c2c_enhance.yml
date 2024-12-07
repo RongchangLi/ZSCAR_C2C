@@ -1,0 +1,82 @@
+#======method setting======
+model:
+  framework: vlm #vlm or vm
+  method: c2c_enhance
+  text_encoding_manner: component #composition, component, c2c_vanilla, c2c_enhance
+  backbone: "ViT-B/32"
+
+text:
+  text_input_type: template #vanilla:v+o,template:fix template+v+o, :[P1,P2,P3], VERB, [P4,P5,P6,P7],OBJECT, [P8,P9,P10,P11],
+#  input_template: "An action of which the dominating object is x and the verb is x" #valid if text_input_type is template
+  input_template_verb: "A verb of  x" #valid
+  input_template_obj: "An object of  x" #valid
+#  input_template: "The x is subjected to the x"
+  learn_input: true # if false, no prompt learning
+  learn_input_method: coop #coop,csp or dfsp #valid if learn_input is true
+  verb_length_type: natural # one or natural ##### maybe useless!
+  ctx_init: true #initialization for ctx. valid if learn_input is true
+  #===train===
+  text_lr: 0.0001
+  text_wd: 0.00001
+  ctx_length: 10
+
+
+data:
+  dataset: sth-com
+  #set as your own path
+  dataset_path: "/data/Disk_B/action_data/SS_data/somethingv2/20bn-something-something-v2-frames/"
+  num_frames: 8
+  num_workers: 4
+
+#======compositional module setting======
+c2c:
+  nlayers: 2
+  fc_emb: 768,1024,1200
+  feat_dim: 512
+  emb_dim: 300
+  relu: False
+
+#======visual encoder setting======
+visual:
+  pretrained: CLIP
+  num_frames: 8
+  adapt_star_layer: 6
+  num_tadapter: 2
+  num_workers: 4
+  cosine_scale: 100
+  visual_lr: 0.0005
+  visual_wd: 0.0001
+
+code_adapt:
+  arch: vit
+  aux_input: False
+  ade_input: False
+
+
+#======general training setting======
+train:
+  train_batch_size: 64
+  gradient_accumulation_steps: 1
+  seed: 0
+  epochs: 50
+  val_epochs_ts: 45
+  warmup: 3
+  epoch_start: 0
+  save_path: './log/c2c_enhance_tsm/'
+  load_model: False
+  best_model_metric: AUC     #best_unseen  best_seen AUC best_loss best_hm
+  eval_every_n: 5
+  save_every_n: 5
+  aux_input: False
+  ade_input: False
+  cutmix_prob: 0.7
+  beta: 1.0
+
+test:
+  eval_batch_size: 32
+  open_world: False
+  topk: 1
+  text_encoder_batch_size: 36
+  bias: 0.001
+  pretrain: False
+  load_model:  YOUR_PATH

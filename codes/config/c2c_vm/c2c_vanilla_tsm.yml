@@ -1,0 +1,62 @@
+#======method setting======
+model:
+  framework: vm #vlm or vm
+  method: c2c_vanilla
+
+data:
+  dataset: sth-com
+  #set as your own path
+  dataset_path: "/data/Disk_B/action_data/SS_data/somethingv2/20bn-something-something-v2-frames/" #YOUR_PATH
+  num_frames: 8
+  num_workers: 4
+
+#======compositional module setting======
+compcos:
+  feat_dim: 512
+  emb_dim: 300
+  nlayers: 2
+  relu: false
+  dropout: true
+  norm: true
+  emb_init: fasttext
+  image_extractor: tsmresnet18
+  train_only: true
+  static_inp: false
+  cosine_scale: 100
+  fc_emb: 768,1024,1200
+  com_lr: 0.00025
+  com_wd: 0.00005
+
+#======visual encoder setting======
+visual:
+  arch: tsmresnet18
+  shift_start: 0 #>3 means no shift
+  temporal_pool: False
+  ve_lr: 0.0005
+  ve_wd: 0.0005
+
+#======general training setting======
+train:
+  train_batch_size: 64
+  gradient_accumulation_steps: 1
+  seed: 0
+  epochs: 50
+  val_epochs_ts: 45
+  warmup: 3
+  epoch_start: 0
+  save_path: './log/c2c_vanilla_tsm' #mofify to YOUR PATH
+  load_model: False
+  best_model_metric: AUC     #best_unseen  best_seen AUC best_loss best_hm
+  eval_every_n: 5
+  save_every_n: 5
+  aux_input: False
+  ade_input: False
+
+test:
+  eval_batch_size: 32
+  open_world: False
+  topk: 1
+  text_encoder_batch_size: 36
+  bias: 0.001
+  pretrain: False
+  load_model:  YOUR_PATH #no effect
